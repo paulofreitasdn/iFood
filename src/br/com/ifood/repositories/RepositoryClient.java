@@ -35,6 +35,7 @@ public class RepositoryClient implements IRepositoryClient {
 
     @Override
     public boolean updateClient(Client client) {
+        // Exception Handling
         try {
             Scanner scan = new Scanner(System.in);
 
@@ -46,6 +47,7 @@ public class RepositoryClient implements IRepositoryClient {
 
             client.setName(name);
             client.setCpf(cpf);
+
         } catch (Exception e) {
             System.out.println("Invalid Information!");
             return false;

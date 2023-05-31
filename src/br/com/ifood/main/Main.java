@@ -94,6 +94,7 @@ public class Main {
                 String payment = scan.nextLine();
 
                 System.out.println("\n" + "Request completed successfully!");
+                System.out.println("Order will be delivered within 30 minutes..");
 
             } else if (number == 2) {
                 System.out.println("Your order has been cancelled!");

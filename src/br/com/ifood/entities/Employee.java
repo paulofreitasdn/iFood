@@ -27,4 +27,9 @@ public class Employee extends Person {
     public void setTypeOfEmployee(String typeOfEmployee) {
         this.typeOfEmployee = typeOfEmployee;
     }
+
+    // Methods
+    public String toString() {
+        return "Name: " + getName() + "\n" + "CPF: " + getCpf();
+    }
 }
