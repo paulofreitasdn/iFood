@@ -1,8 +1,8 @@
 <h3> Criação do Backend iFood para fins acadêmicos baseado em Java! <h3>
 
-> Status do Projeto: Em Desenvolvimento
+
   
-  <h4> Overview <h4>
+<h2> Overview <h2>
  
 The project in question is a simulation of iFood, a very popular food delivery platform. 
 The objective of this simulation is to develop a system that reproduces some basic features of iFood, such as customer registration, restaurant management, placing orders, among others.
