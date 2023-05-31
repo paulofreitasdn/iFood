@@ -5,6 +5,7 @@ import br.com.ifood.entities.Employee;
 import br.com.ifood.repositories.RepositoryClient;
 import br.com.ifood.repositories.RepositoryEmployee;
 import br.com.ifood.services.ServicesClient;
+import br.com.ifood.services.ServicesEmployee;
 
 import java.util.List;
 import java.util.Scanner;
@@ -16,6 +17,7 @@ public class Main {
         RepositoryClient repositoryclient = new RepositoryClient();
 
         ServicesClient servicesClient = new ServicesClient();
+        ServicesEmployee servicesEmployee = new ServicesEmployee();
 
         // Employees
 
@@ -81,7 +83,7 @@ public class Main {
             if (number == 1) {
                 servicesClient.placeAnOrder(client3);
             } else if (number == 2) {
-               servicesClient.cancelOrder(client3);
+                servicesClient.cancelOrder(client3);
             } else if (number == 3) {
                 System.out.println("-----------");
                 System.out.println(client3);
