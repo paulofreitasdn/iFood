@@ -71,13 +71,14 @@ public class Main {
 
         int number = 0;
 
-        while (number != 5) {
+        while (number != 6) {
 
             System.out.println("\n" + "Enter [1] to place an order");
             System.out.println("Enter [2] to cancel an order");
             System.out.println("Enter [3] to view your account information");
             System.out.println("Enter [4] to rate a restaurant");
-            System.out.println("Enter [5] to exit");
+            System.out.println("Enter [5] to rate a restaurant");
+            System.out.println("Enter [6] to exit");
             number = scan.nextInt();
 
             if (number == 1) {
@@ -90,7 +91,9 @@ public class Main {
                 System.out.println("-----------");
             } else if (number == 4) {
                 servicesClient.rateRestaurant();
-            } else if (number != 5) {
+            } else if (number == 5) {
+                System.out.println(servicesEmployee.respondToComplaint(client3));
+            } else if (number != 6) {
                 System.out.println("Invalid Option!");
             }
         }
